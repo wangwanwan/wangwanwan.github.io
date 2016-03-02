@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>饿了么首页</title>
+    <link rel="stylesheet" href="css/head.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+
+</head>
+<body>
+<!--导航条-->
+<div class="topbar">
+    <div class="container clearfix">
+        <h1><a href="" class="topbar-logo"></a></h1>
+        <a href="" class="topbar-item topbar-homepage focus ">首页</a>
+        <a href="javascript:;" class="topbar-item ng-scope">品牌商家<i class="elemeicon elemeicon-hot"></i></a>
+        <a href="javascript:;" class="topbar-item">我的订单</a>
+
+        <div class="topbar-nav">
+            <a href="" class="topbar-nav-link">
+                <i class="fa fa-gift font"></i>积分商城
+            </a>
+            <a href="" class="topbar-nav-link">
+                <i class="fa fa-headphones font"></i>服务中心
+            </a>
+
+            <div class="topbar-nav-link">
+                <i class="fa fa-mobile font"></i>手机应用
+                <div class="dropbox topbar-mobile-dropbox">
+                    <i class="fa fa-caret-up special"></i>
+                    <span>扫一扫订餐更方便</span>
+                    <img src="img/saoma.png" alt="" class="topbar-nav-qrcode"/>
+                </div>
+            </div>
+            <div>
+                <div class="topbar-profilebox">
+                    <i class="fa fa-user topbar-profilebox-avatar"></i>
+                    <span>
+                        <a href="">登录</a>/<a href="">注册</a>
+                    </span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--侧边框-->
+<div class="sidebar">
+    <div class="sidebar-tabs">
+        <div class="toolbar-tabs-middle">
+            <a href="#" class="toolbar-btn">
+                <i class="fa fa-file-text-o"></i>
+                <div class="remind">
+                    <i class="fa fa-caret-right icon"></i>
+                    <span class="remind-text">我的订单</span>
+                </div>
+            </a>
+            <div class="toolbar-separator"></div>
+            <a href="javascript:;" class="toolbar-cartbtn toolbar-open focus" id="shop"><i class="fa fa-shopping-cart icon-card"></i></a>
+            <div class="toolbar-separator"></div>
+            <a href="#" class="toolbar-btn">
+                <i class="fa fa-envelope-o"></i>
+                <div class="remind">
+                    <i class="fa fa-caret-right icon"></i>
+                    <span class="remind-text">我的信息</span>
+                </div>
+            </a>
+            <a href="#" class="toolbar-btn">
+                <i class="fa fa-clock-o"></i>
+                <div class="remind">
+                    <i class="fa fa-caret-right icon"></i>
+                    <span class="remind-text">浏览历史</span>
+                </div>
+            </a>
+
+        </div>
+        <div class="toolbar-tabs-bottom">
+
+            <div class="toolbar-btn saoma">
+                <i class="fa fa-qrcode"></i>
+                <div class="dropbox toolbar-tabs-dropbox">
+                    <i class="fa fa-caret-right caret-right"></i>
+                    <a href="#">
+                        <img src="img/saoma2.png">
+                        <p>下载手机应用</p>
+                        <p class="activity">即可参加分享红包活动</p>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="toolbar-btn">
+                <i class="fa fa-headphones"></i>
+                <div class="remind">
+                    <i class="fa fa-caret-right icon"></i>
+                    <span class="remind-text">在线客服</span>
+                </div>
+            </a>
+            <a href="javascript:;" class="toolbar-btn sidebar-btn-backtop"  id="btn" style="display: none">
+                <i class="fa fa-arrow-circle-up"></i>
+                <div class="remind">
+                    <i class="fa fa-caret-right icon"></i>
+                    <span class="remind-text">回到顶部</span>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div class="sidebar-content">
+        <div class="sidebarcart-caption">
+            <a href="">购物车</a>
+            <i class="fa fa-angle-double-right double-right"></i>
+        </div>
+        <div class="sidebarcart-notice">
+            <i class="fa fa-clock-o"></i>
+            <h3>购物车空空如也</h3>
+            <p>快去订餐吧，总有你心仪的美食</p>
+        </div>
+    </div>
+
+</div>
+<!--内容部分-->
+<div class="content">
+    <!-- 位置信息-->
+    <div class="container clearfix">
+        <div class="location">
+            <span>当前位置:</span>
+            <span class="location-current"><a href="" class="inherit">山阳区河南理工大学内</a></span>
+            <span class="location-change"><a href="">[切换地址]</a></span>
+        </div>
+        <div class="place-search">
+            <a href="" class="place-search-btn"><i class="fa fa-search"></i></a>
+            <!--<label>搜索商家或美食</label>-->
+            <input type="text" placeholder="搜索商家，美食..." class="place-search-input"/>
+        </div>
+    </div>
+    <!-- 滚动图片-->
+    <div class="place-ad container">
+        <img src="img/bigimg.jpeg" alt=""/>
+        <a href="" class="num">1</a>
+    </div>
+    <!-- 商家信息-->
+    <div class="place-tab container clearfix">
+        <a href="" class="place-tab-item focus">外卖商家</a>
+        <a href="" class="place-tab-item">附近的团购</a>
+
+        <div class="place-child">
+            <img src="img/child.png" alt=""/>
+        </div>
+    </div>
+    <!-- 详细信息-->
+    <div class="container">
+        <div class="excavator container">
+            <!-- 商品分类-->
+            <div class="excavator-filter">
+                <span class="excavator-filter-name">商家分类:</span>
+                <a href="" class="excavator-filter-item focus">全部商家</a>
+                <a href="" class="excavator-filter-item special">品牌商家</a>
+                <a href="" class="excavator-filter-item">快餐类</a>
+                <a href="" class="excavator-filter-item">正餐类</a>
+                <a href="" class="excavator-filter-item">小吃零食</a>
+                <a href="" class="excavator-filter-item">甜品饮品</a>
+                <a href="" class="excavator-filter-item">果蔬生鲜</a>
+                <a href="" class="excavator-filter-item">鲜花蛋糕</a>
+                <a href="" class="excavator-filter-item">超市便利店</a>
+            </div>
+            <!--商品搜索条件 -->
+            <div class="excavator-bgbar clearfix">
+                <div class="place-search">
+                    <a href="" class="place-search-btn"><i class="fa fa-search"></i></a>
+                    <input type="text" placeholder="搜索商家，美食..." class="place-search-input"/>
+                </div>
+                <div class="excavator-sort">
+                    <a href="" class="excavator-sort-item focus">默认排序</a>
+                    <a href="" class="excavator-sort-item">销量高</a>
+                    <a href="" class="excavator-sort-item">评价好</a>
+
+                    <div class="excavator-sort-item">
+                        <a href="">
+                            <span>其他排序</span>
+                            <i class="fa fa-angle-down angle-down"></i>
+                            <i class="fa fa-angle-up angle-up"></i>
+
+                        </a>
+
+                        <div class="excavator-sort-dropdown">
+
+                            <a href="">距离最近</a>
+                            <a href="">配送速度</a>
+                            <a href="">起送金额</a>
+                        </div>
+                    </div>
+                    <div class="excavator-sort-item">
+                        <a href="">
+                            <span>起送价格：不限</span>
+                            <i class="fa fa-angle-down angle-down"></i>
+                            <i class="fa fa-angle-up angle-up"></i>
+                        </a>
+
+                        <div class="excavator-sort-dropdown wide">
+                            <a href="" class="focus">不限</a>
+                            <a href="">15元以下</a>
+                            <a href="">20元以下</a>
+                            <a href="">30元以下</a>
+                            <a href="">40元以下</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="excavator-option">
+                    <label class="excavator-option-item"><input type="checkbox"/>新开商家</label>
+                    <label class="excavator-option-item"><input type="checkbox"/>免费配送</label>
+                    <label class="excavator-option-item"><input type="checkbox"/>饿配送</label>
+                    <label class="excavator-option-item"><input type="checkbox"/>可开发票</label>
+                    <label class="excavator-option-item"><input type="checkbox"/>在线支付</label>
+                </div>
+
+            </div>
+        </div>
+        <div class="place-tips">
+            <span>想吃好点的，看看附近<span> 2 家 </span>品牌商家吧，<a href="">立即查看</a></span>
+        </div>
+        <div class="place-rstbox clearfix">
+            <div class="clearfix">
+                <a href="./detail.html" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/1.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>36分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">8090中西式快餐酒吧</div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 89%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售51单</span>
+
+                        <div class="rstblock-cost">20元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                        </div>
+                    </div>
+
+                    <!-- hover显示块部分-->
+                    <div class="rstblock-hidden">
+                        <span class="caret-left"><i class="fa fa-caret-left"></i></span>
+                        <div class="content">
+                            <h3>8090中西式快餐酒吧</h3>
+                            <div class="rstblock-activity contentpay">
+                                <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                                <span class="pay">可使用支付宝、微信、手机QQ进行在线支付</span>
+                            </div>
+                            <div class="inform"><!-- 告知-->
+                                <span><i style="color: red;font-style: normal">20</i>元起送</span><span>免费配送</span><span>平均<i style="color: red;font-style: normal">36</i>分钟送达</span>
+                            </div>
+                            <p class="bulletin">本店推荐您在饿了么网上订餐——1、请确保电话开机及铃声状态以便送餐员能联系上您2、外卖制作+配送都需要耗费时间，希望大家提前预订3、请注意查看蜂鸟送餐短信及电话4000557117，以免耽误您吃饭。饿了么理工大学咨询电话13526425276，全国客服热线10105757</p>
+
+
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/5.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            味鲜盒饭快餐
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #3cc791">赠</i>
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background-color: #f1884f">秒</i>
+                            <i style="background-color: #f1884f">8</i>
+                            <i style="background-color: #f1884f">12</i>
+                            <i style="background-color: #f1884f">9</i>
+                            <i style="background-color: #f1884f">11</i>
+                            <i style="background-color: #f1884f">15</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/6.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>37分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">香酥风味炸鸡</div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 95%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售765单</span>
+
+                        <div class="rstblock-cost">0元起送 / 免费配送</div>
+                        <div class="rstblock-schedule">可预订，11:00后送餐</div>
+
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/7.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>36分钟</span>
+                        <div class="elemeicon elemeicon-premiumsign rstblock-logo-premiumsign"></div>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            王先生黄焖鸡米饭
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 80%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售560单</span>
+
+                        <div class="rstblock-cost">0元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                        </div>
+                    </div>
+
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/8.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            三毛烤肉拌饭
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 70%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售70单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #f07373">考</i>
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/9.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            农家小厨（大盘鸡）
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #f07373">考</i>
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background-color: #f1884f">8</i>
+                            <i style="background-color: #f1884f">9</i>
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/10.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            鸡排英雄
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #f1884f">21</i>
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background-color: #f1884f">20</i>
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/11.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            大张果木烤鸭
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-schedule">可预订，11:00后送餐</div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/1.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>36分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">8090中西式快餐酒吧</div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 89%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售51单</span>
+
+                        <div class="rstblock-cost">20元起送 / 免费配送</div>
+                        <div class="rstblock-schedule">可预订，11:00后送餐</div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/5.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            味鲜盒饭快餐
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #3cc791">赠</i>
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background-color: #f1884f">秒</i>
+                            <i style="background-color: #f1884f">8</i>
+                            <i style="background-color: #f1884f">12</i>
+                            <i style="background-color: #f1884f">9</i>
+                            <i style="background-color: #f1884f">11</i>
+                            <i style="background-color: #f1884f">15</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/6.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>37分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">香酥风味炸鸡</div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 95%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售765单</span>
+
+                        <div class="rstblock-cost">0元起送 / 免费配送</div>
+                        <div class="rstblock-schedule">可预订，11:00后送餐</div>
+
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/7.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>36分钟</span>
+                        <div class="elemeicon elemeicon-premiumsign rstblock-logo-premiumsign"></div>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            王先生黄焖鸡米饭
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 80%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售560单</span>
+
+                        <div class="rstblock-cost">0元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/8.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            三毛烤肉拌饭
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 70%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售70单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #f07373">考</i>
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/9.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            农家小厨（大盘鸡）
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #f07373">考</i>
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background-color: #f1884f">8</i>
+                            <i style="background-color: #f1884f">9</i>
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/10.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            鸡排英雄
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #f1884f">21</i>
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background-color: #f1884f">20</i>
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/11.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            大张果木烤鸭
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-schedule">可预订，11:00后送餐</div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/1.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>36分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">8090中西式快餐酒吧</div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 89%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售51单</span>
+
+                        <div class="rstblock-cost">20元起送 / 免费配送</div>
+                        <div class="rstblock-schedule">可预订，11:00后送餐</div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/5.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            味鲜盒饭快餐
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #3cc791">赠</i>
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background-color: #f1884f">秒</i>
+                            <i style="background-color: #f1884f">8</i>
+                            <i style="background-color: #f1884f">12</i>
+                            <i style="background-color: #f1884f">9</i>
+                            <i style="background-color: #f1884f">11</i>
+                            <i style="background-color: #f1884f">15</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/6.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>37分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">香酥风味炸鸡</div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 95%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售765单</span>
+
+                        <div class="rstblock-cost">0元起送 / 免费配送</div>
+                        <div class="rstblock-schedule">可预订，11:00后送餐</div>
+
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/7.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>36分钟</span>
+                        <div class="elemeicon elemeicon-premiumsign rstblock-logo-premiumsign"></div>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            王先生黄焖鸡米饭
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 80%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售560单</span>
+
+                        <div class="rstblock-cost">0元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/10.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            鸡排英雄
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #f1884f">21</i>
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background-color: #f1884f">20</i>
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/11.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            大张果木烤鸭
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-schedule">可预订，11:00后送餐</div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/1.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>36分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">8090中西式快餐酒吧</div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 89%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售51单</span>
+
+                        <div class="rstblock-cost">20元起送 / 免费配送</div>
+                        <div class="rstblock-schedule">可预订，11:00后送餐</div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/5.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            味鲜盒饭快餐
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #3cc791">赠</i>
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background-color: #f1884f">秒</i>
+                            <i style="background-color: #f1884f">8</i>
+                            <i style="background-color: #f1884f">12</i>
+                            <i style="background-color: #f1884f">9</i>
+                            <i style="background-color: #f1884f">11</i>
+                            <i style="background-color: #f1884f">15</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/6.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>37分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">香酥风味炸鸡</div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 95%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售765单</span>
+
+                        <div class="rstblock-cost">0元起送 / 免费配送</div>
+                        <div class="rstblock-schedule">可预订，11:00后送餐</div>
+
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/7.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>36分钟</span>
+                        <div class="elemeicon elemeicon-premiumsign rstblock-logo-premiumsign"></div>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            王先生黄焖鸡米饭
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 80%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售560单</span>
+
+                        <div class="rstblock-cost">0元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/8.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            三毛烤肉拌饭
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 70%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售70单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #f07373">考</i>
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/9.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            农家小厨（大盘鸡）
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #f07373">考</i>
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background-color: #f1884f">8</i>
+                            <i style="background-color: #f1884f">9</i>
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/11.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            大张果木烤鸭
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-schedule">可预订，11:00后送餐</div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/1.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>36分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">8090中西式快餐酒吧</div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 89%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售51单</span>
+
+                        <div class="rstblock-cost">20元起送 / 免费配送</div>
+                        <div class="rstblock-schedule">可预订，11:00后送餐</div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/5.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            味鲜盒饭快餐
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #3cc791">赠</i>
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background-color: #f1884f">秒</i>
+                            <i style="background-color: #f1884f">8</i>
+                            <i style="background-color: #f1884f">12</i>
+                            <i style="background-color: #f1884f">9</i>
+                            <i style="background-color: #f1884f">11</i>
+                            <i style="background-color: #f1884f">15</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/6.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>37分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">香酥风味炸鸡</div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 95%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售765单</span>
+
+                        <div class="rstblock-cost">0元起送 / 免费配送</div>
+                        <div class="rstblock-schedule">可预订，11:00后送餐</div>
+
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/7.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>36分钟</span>
+                        <div class="elemeicon elemeicon-premiumsign rstblock-logo-premiumsign"></div>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            王先生黄焖鸡米饭
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 80%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售560单</span>
+
+                        <div class="rstblock-cost">0元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/10.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            鸡排英雄
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #f1884f">21</i>
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background-color: #f1884f">20</i>
+                            <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/11.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            大张果木烤鸭
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-schedule">可预订，11:00后送餐</div>
+                    </div>
+                </a>
+
+                <a href="" class="rstblock">
+                    <div class="rstblock-logo">
+                        <img src="img/5.jpeg" alt="" class="rstblock-logo-icon"/>
+                        <span>27分钟</span>
+                    </div>
+                    <div class="rstblock-content">
+                        <div class="rstblock-title">
+                            味鲜盒饭快餐
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <span class="icon-star" style="width: 60%;">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <span class="rstblock-monthsales">月售593单</span>
+
+                        <div class="rstblock-cost">10元起送 / 免费配送</div>
+                        <div class="rstblock-activity">
+                            <i style="background-color: #3cc791">赠</i>
+                            <i style="background-color: #f07373">减</i>
+                            <i style="background-color: #f1884f">秒</i>
+                            <i style="background-color: #f1884f">8</i>
+                            <i style="background-color: #f1884f">12</i>
+                            <i style="background-color: #f1884f">9</i>
+                            <i style="background-color: #f1884f">11</i>
+                            <i style="background-color: #f1884f">15</i>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="footer">
+    <div class="container clearfix">
+        <div class="footer-link">
+            <h3 class="footer-link-title">用户帮助</h3>
+            <a href="" class="footer-link-item">服务中心</a>
+            <a href="" class="footer-link-item">常见问题</a>
+            <a href="" class="footer-link-item">在线客服</a>
+        </div>
+        <div class="footer-link">
+            <h3 class="footer-link-title">商务合作</h3>
+            <a href="" class="footer-link-item">我要开店</a>
+            <a href="" class="footer-link-item">加盟指南</a>
+            <a href="" class="footer-link-item">市场合作</a>
+            <a href="" class="footer-link-item">开放平台</a>
+        </div>
+        <div class="footer-link">
+            <h3 class="footer-link-title">关于我们</h3>
+            <a href="" class="footer-link-item">饿了么介绍</a>
+            <a href="" class="footer-link-item">加入我们</a>
+            <a href="" class="footer-link-item">联系我们</a>
+            <a href="" class="footer-link-item">服务协议</a>
+        </div>
+        <div class="footer-contect">
+            <div class="footer-contect-item">
+                24小时客服热线:
+                <a href="" class="inherit">10105757</a>
+            </div>
+            <div class="footer-contect-item">
+                意见反馈：
+                <a href="" class="inherit"> feedback@ele.me</a>
+            </div>
+            <div class="footer-contect-item">
+                关注我们：
+                <div class="icon-wechat">
+                    <span class="icon-weixin"><i class="fa fa-weixin weixin"></i></span>
+                    <div class="dropbox dropbox-bottom footer-contect-dropbox">
+                        <i class="fa fa-caret-down special"></i>
+                        <img src="img/saoma2.png" alt=""/>
+                        <p>微信号: elemeorder</p>
+                        <p>饿了么网上订餐</p>
+                    </div>
+                </div>
+                <a href="" class="icon-weibo"><i class="fa fa-weibo weibo"></i></a>
+                <a href="" class="icon-renren"><i class="fa fa-renren renren"></i></a>
+            </div>
+
+        </div>
+        <div class="footer-mobile">
+            <a href=""><img src="img/saoma3.png" alt="" class="footer-mobile-icon"/></a>
+            <div class="footer-mobile-content">
+                <h3>下载手机版</h3>
+                <p>扫一扫,手机订餐方便</p>
+            </div>
+        </div>
+            <div class="footer-copyright serif">增值电信业务许可证 :
+                <a href="" class="inherit">沪B2-20150033</a>
+                | <a href="" class="inherit">沪ICP备 09007032</a>
+                | <a href="" class="inherit">上海工商行政管理</a>
+                Copyright ©2008-2015 ele.me, All Rights Reserved.
+            </div>
+
+        <div class="footer-police container">
+            <a href=""><img src="img/police.jpg" height="30" alt=""/></a>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

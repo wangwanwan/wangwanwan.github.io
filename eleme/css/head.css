@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, button, input, select, textarea {
+    font: 400 1em/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    height: 0;
+    clear: both;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: #0089dc;/*暂时不用 */
+}
+
+.container{
+    font-size: 14px;
+    width: 1180px;
+    margin: 0 auto;
+}
+/*饿了么logo*/
+
+.topbar-logo,.topbar-item,.topbar-nav-link{
+    float: left;
+}
+.topbar-item{
+    font-size: 13px;
+    color: #FFFFFF;
+    width: 144px;/*和原数据不太一致*/
+    text-align: center;
+    position: relative;
+}
+
+.topbar-item.topbar-homepage{
+    width: 112px !important;
+}
+.elemeicon{
+    background: url("../img/icon.png") no-repeat;
+}
+.topbar-item .elemeicon-hot{
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    width: 30px;
+    height: 20px;
+    background-position: 0 -226px;
+}
+.topbar-nav{
+    float: right;
+    width: 504px;
+    color: #d2e7f9;;
+}
+.topbar-nav .font{
+    margin-right: 5px;
+    font-size: 22px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.topbar-nav .special{
+    position: absolute;
+    top: -11px;
+    left: 9px;
+    color: #FFFFFF;
+}
+.topbar-nav-link.focus, .topbar-nav-link:active, .topbar-nav-link:focus, .topbar-nav-link:hover {
+    color: #fff;
+}
+.topbar-nav-link{
+    padding: 0 10px;
+    color: inherit;
+    width: 106px;
+    position: relative;
+    cursor: pointer;/*可写可不写*/
+}
+.topbar-nav-link .topbar-mobile-dropbox{
+    display: none;
+    cursor: auto;
+    margin-top: -5px;
+    top: 100%;
+    padding: 3px 10px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+    line-height: 40px;
+    left: 7px;
+}
+.dropbox{
+    color: #999999;/*什么时候起作用*/
+    position: absolute;
+    background: rgba(255,255,255,0.98);
+    padding: 4px 6px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    z-index: 6;/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+}
+.topbar-nav-qrcode{
+    width: 100%;
+}
+.topbar-nav-link:hover .topbar-mobile-dropbox{
+    display: block;
+}
+.topbar-profilebox{
+    color: #FFFFFF;
+    float: right;
+}
+.topbar-profilebox-avatar{
+    display: inline-block;
+    width: 26px;
+    /*height: 26px;*/
+    font-size: 22px !important;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.topbar-profilebox>span>a{
+    color: #FFFFFF;
+}

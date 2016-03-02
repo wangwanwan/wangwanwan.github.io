@@ -1,0 +1,323 @@
+body{
+    line-height: 22px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica;
+    color: #333333;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+h3{
+    margin: 0;
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: #FFFFFF;
+    text-align: center;
+    min-width: 500px;
+}
+.header_top{
+    height: 45px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.bd_left{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    background: #333645;
+}
+.bd_right{
+    margin-left: 50px;
+    min-width: 1065px;
+
+}
+.main{
+    background: #E6E6E6;
+    float: left;
+    width: 100%;
+
+}
+.right{
+    background: #E6E6E6;
+    float: right;
+    width: 230px;
+    /*margin-right: 0; 此方法中这个属性不适合*/
+    margin-left: -230px;
+    margin-top: 100px;
+
+}
+.bd_left_top{
+    height: 45px;
+    background-color: #242632;
+    text-align: center;
+}
+h3{
+    color: #FFFFFE;
+    line-height: 50px;
+
+}
+.font_list ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.font_list ul li{
+    height: 40px;
+    text-align: center;
+
+}
+.font_list ul li:first-child{
+    margin-top: 20px;
+}
+i{
+    color: #737F8B;
+    font-size: 16px !important;
+}
+.header_top_left{
+    height: 45px;
+    float: left;
+    line-height: 45px;
+    margin-left: 20px;
+}
+.header_top_right{
+    height: 45px;
+    float: right;
+    line-height: 45px;
+    margin-right: 80px;
+    text-align: center;
+}
+.header_top_left span{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+}
+ .header_top_right input[type="text"]{
+    padding: 2px 4px;
+    width: 60px;
+    border: 1px solid #9A9A9A;
+    border-radius: 30px;
+}
+input:focus{
+    outline: none;
+}
+img{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.header_top_right img{
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-bottom: -5px;
+}
+.falist{
+    display: inline-block;
+    border-left: 1px solid #dfdfdf;
+}
+.falist a{
+    display: inline-block;
+    margin-left: 20px;
+}
+.input{
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 40px;
+}
+.input button{
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 3px 5px;
+    border: none;
+    margin-left: 5px;
+}
+.input button i{
+    color: #FFFFFF;
+    font-size: 12px !important;
+}
+.input input{
+    margin: 0;
+}
+.table{
+    margin: 90px 270px 0 40px;
+}
+.table .select{
+    padding: 2px;
+    width: 180px;
+    border-radius: 3px;
+}
+.table_item{
+    margin-top: 10px;
+}
+.client_table{
+    height: 60px;
+    width: 100%;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+.only{
+    background: none;
+}
+td{
+    text-align: center;
+}
+.client_table tr td:first-child{
+    text-align: left;
+}
+.fl{
+    float: left;
+}
+.checkbox{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 5px;
+}
+.client_table a{
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 10px;
+    margin-left: 14px;
+    padding-top: 10px;
+}
+.client_table a img{
+    width: 30px;
+    height: 30px;
+}
+.client_name{
+    height: 40px;
+    line-height: 40px;
+}
+.edit_time{
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #778087;
+}
+.client_name span:first-child{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.client_name .company{
+    color: #778087;
+    font-size: 12px;
+}
+.bg i{
+    color: #8AC873;
+}
+.client_table i,.date_top i{
+    font-size: 12px !important;
+}
+.fr{
+    float: right;
+}
+.right .top{
+    height: 40px;
+    line-height: 40px;
+    background: #F6F2F1;
+}
+.right .btm{
+    height: 220px;
+    background: #FFFFFF;
+}
+.right .contract .btm{
+    height: 130px;
+}
+.contact,.contract{
+    margin-top: 20px;
+}
+.right .top span:first-child{
+    font-weight: bold;
+    margin: 0 20px;
+}
+.right .top span:nth-child(2){
+    color: #778087;
+    font-size: 12px;
+}
+.right .top span:last-child i{
+    font-size: 12px !important;
+    margin-right: 20px;
+}
+.right .contact .btm div{
+    height: 50px;
+    line-height: 50px;
+
+}
+.right .btm div a{
+    margin: 0 15px;
+
+}
+.right .btm .name{
+    font-weight: bold;
+}
+.right .btm .phonenum{
+    font-size: 12px;
+    margin-right: 10px;
+}
+.right .btm .more_user{
+    margin-left: 50px;
+    margin-top: 10px;
+    background: #8AC873;
+    color: #FFFFFF;
+    border: none;
+    height: 30px;
+    padding: 5px 15px;
+
+}
+.right .btm .more_user i{
+    color: #FFFFFF;
+}
+/*.prev,.next{*/
+    /*cursor: pointer;*/
+/*}*/
+.contract .btm .img{
+    position: relative;
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.contract .btm .img span{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+}
+.contract .btm .img span i{
+    color: #FFFFFF;
+
+}
+.contract .btm p{
+    font-size: 12px;
+    margin-left: 15px;
+    color: #778087;
+}
+.contract .btm .left,.contract .btm .right1{
+    display: inline-block;
+}
+/*生成日期表*/
+/*.table-condensed{*/
+    /*margin-left: 20px;*/
+/*}*/
+/*.table-condensed td{*/
+    /*padding: 0 3px;*/
+/*}*/
+
+
+
+

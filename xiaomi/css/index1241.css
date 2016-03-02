@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 1242px;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.nav ul li a{
+    padding: 0px 20px;
+}
+.nav>ul:last-child{
+    width: 993px;
+}
+.nav>ul:last-child li a:hover{
+    background-color: #333333;
+}
+.tabimg{
+    background-image: url(../img/1112big.jpg);
+    width: 992px;
+    height: 421px;
+}
+.nav-img{
+    display: inline;
+    width: 994px;
+    height: 177px;
+}
+.nav-img div{
+    width: 330px;
+    height: 177px;
+    overflow: hidden;
+
+}
+.product div{
+    width: 309px;
+    height: 308px;
+    float: left;
+}
+

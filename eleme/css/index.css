@@ -1,0 +1,663 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    padding-right: 35px;
+    background: #f7f7f7;
+}
+.topbar-logo{
+    display: block;
+    width: 105px;
+    height: 60px;
+    margin-right: 30px;
+    line-height: inherit;
+    background-image: url("../img/logo.png");
+}
+.topbar{
+    width: 100%;
+    line-height: 60px;
+    background-color: #1e89e0;
+    min-width: 1180px;/*为了解决窗口缩小时导航条出现空白情况*/
+}
+.topbar-item:hover{
+    background: #0c77d1;
+}
+.topbar-item:active,.topbar-item:focus{
+    background: #006bc7;
+    outline: 0;
+}
+.topbar-item.focus{
+    background-color: #006bc7;
+}
+
+/*侧边导航条*/
+.sidebar {
+    right: -295px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: #504d53;
+    width: 330px;
+    z-index: 7;
+}
+.sidebarright{
+    right: 0;
+}
+.sidebar-tabs{
+    float: left;
+    height: 100%;
+    width: 35px;
+}
+.toolbar-tabs-middle {
+    position: absolute;
+    width: 35px;
+    top: 50%;/*为什么这样设计*/
+    margin-top: -220px;/**/
+}
+.toolbar-btn {
+    width: 35px;
+    line-height: 35px;
+    color: #ccc;
+    margin: 5px 0;
+    font-size: 20px;
+}
+/*所有图标和购物车*/
+.toolbar-btn, .toolbar-cartbtn {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+}
+/*购物车和购物车点击和鼠标悬浮在购物车*/
+.toolbar-cartbtn.focus, .toolbar-cartbtn:focus, .toolbar-cartbtn:hover {
+    color: #fff;
+    outline: 0;
+    background-color: #26a2ff;
+}
+.toolbar-btn.focus, .toolbar-btn:focus, .toolbar-btn:hover {
+    color: #fff;
+    background-color: #26a2ff;
+    outline: 0;
+}
+.toolbar-cartbtn {
+    color: #ccc;
+    line-height: 16px;
+    padding: 7px 8px 10px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.toolbar-cartbtn:after {
+
+    content: "购 物 车";
+}
+.toolbar-tabs-bottom {
+    bottom: 10px;
+    position: absolute;
+}
+.sidebar-btn-backtop, .toolbar-tabs-bottom .saoma {
+    position: relative;
+}
+
+
+.caret-right {
+    position: absolute;
+    right: -5px;
+    bottom: 23px;
+    color: #FFFFFF;
+
+}
+.toolbar-tabs-dropbox {
+    right: 35px;
+    top: -150px;
+    line-height: 24px;
+    display: none;
+    z-index: 9;
+}
+.toolbar-tabs-dropbox img {
+    width: 130px;
+    height: 130px;
+}
+.toolbar-tabs-dropbox .activity {
+    padding: 5px;
+    color: #f63;
+    font-size: 12px;
+}
+.toolbar-btn.saoma:hover .toolbar-tabs-dropbox{
+    display: block;
+}
+/*购物车下面的横线*/
+.toolbar-separator {
+    font-size: 1px;
+    border-top: 1px solid #737074;
+    height: 0;
+    margin: 0 8px;
+}
+/*购物车内容部分*/
+.sidebar-content {
+    margin-left: 35px;
+    height: 100%;
+    width: 295px;
+    overflow: auto;
+    background-color: #e6e6e6;
+}
+.sidebarcart-caption {
+    background: #fff;
+    font-size: 16px;
+    color: #999;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.sidebarcart-caption>a {
+    max-width: 240px;
+    display: inline-block;
+    line-height: 16px;
+    color: #333;
+}
+.sidebarcart-caption>i{
+    float: right;
+    cursor: pointer;
+    line-height: 20px;
+    margin-left: 15px;
+    color: #666;
+}
+.sidebarcart-notice{
+    padding: 5px 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+}
+.sidebarcart-notice i{
+    color: #999;
+    margin: 30px auto 20px;
+    font-size: 50px;
+    display: block;
+}
+.sidebarcart-notice h3{
+    font-weight: 400;
+    font-size: 18px;
+}
+.sidebarcart-notice p{
+    color: #999;
+    font-size: 12px;
+}
+
+/*content部分*/
+.location{
+    font-size: 12px;
+    float: left;
+    vertical-align: middle;
+}
+.location>span:first-child{
+    color: #999999;
+    margin-right: 5px;
+}
+.location>span{
+    display: inline-block;
+    line-height: 54px;
+    vertical-align: top;
+}
+.location .location-current{
+    white-space: nowrap;/*white-space 属性设置如何处理元素内的空白。nowrap文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。*/
+    margin-right: 5px;
+}
+.location .location-current{
+    max-width: 138px;/*超过这个宽度就会省略号显示*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+a.inherit{
+    color: inherit;
+}
+.place-search{
+    float: right;
+    margin: 10px 0;
+    height: 32px;
+    border: 1px solid #cccccc;
+    z-index: 3;
+    background: #FFFFFF;
+    position: relative;
+}
+.place-search-btn{
+    float: right;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: #999999;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    width: 46px;
+}
+.place-search-btn:hover{
+    color: #0089dc;
+}
+.place-search-btn,.place-search-input{
+    padding: 0 8px;
+    margin: 4px 0;
+    line-height: 24px;
+}
+.place-search-input{
+    width: 236px;
+    border: none;
+    outline: 0;
+    transition: width 0.3s ease-in-out;
+}
+.place-search-input:focus{
+    width: 306px;
+}
+.place-ad{
+    margin-bottom: 10px;
+    clear: both;/*可写可不写*/
+    position: relative;
+    height: 98px;
+}
+.place-ad .num{
+    display: block;
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgba(255,102,0,.8);
+    color: #FFFFFF;
+    text-align: center;
+}
+.place-tab{
+    line-height: 40px;
+    font-size: 18px;
+    border-bottom: 1px solid #E6E6E6 ;
+}
+.place-tab-item{
+    float: left;
+    color: #666666;
+    padding: 0 20px;
+    display: inline-block;
+}
+.place-tab-item.focus{
+    border-bottom: 3px solid #0089dc;
+    margin-bottom: -2px;
+    color: #0089dc;
+}
+.place-child{
+    width: 186px;
+    height: 42px;
+    float: right;
+    cursor: pointer;
+    margin-top: -6px;
+    position: relative;
+    margin-bottom: -13px;
+    z-index: 2;/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+}
+.place-child img{
+    width: 186px;
+    height: 55px;
+}
+.excavator{
+    border: 1px solid #e6e6e6;
+}
+.excavator-filter{
+    line-height: 26px;
+    background: #FFFFFF;
+    padding: 10px 10px 10px 98px;/*98px=7em 当前font-size是14px*/
+    position: relative;
+}
+.excavator-filter-name{
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    color: #999999;
+}
+.excavator-filter-name,.excavator-filter-item{
+    padding: 0 10px;
+    margin-right: 8px;
+}
+
+.excavator-filter-item:hover {
+    background-color: #f6f6f6;
+    border-radius: 3px;
+}
+.excavator-filter-item.focus{
+    background-color: #0089dc;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.excavator a{
+    color: #666666;
+}
+.excavator-filter-item{
+    white-space: nowrap;
+    display: inline-block;
+    margin: 5px 6px;
+}
+.excavator-filter-item.special{
+    color: #f74342;
+}
+.excavator-bgbar{
+    background-color: #f5f5f5;
+}
+
+
+/*下拉时出现的搜索框*/
+.excavator-bgbar .place-search {
+    margin: 2px 0;
+    display: none;
+}
+
+
+/*下拉的时候出现新增属性*/
+.excavator-sticky.excavator-bgbar .place-search {
+    display: block;
+    float: right;
+    margin-right: 4px;
+}
+.excavator-sticky.excavator-bgbar .excavator-option {
+    float: left;
+    margin-right: 0;
+}
+.excavator-sticky.excavator-bgbar {
+    position: fixed;
+    top: 0;
+    margin-left: -1px;
+    width: 1180px;
+    border: 1px solid #e6e6e6;
+    margin-top: 0;
+    box-shadow: 0 3px 3px -3px rgba(0,0,0,.2);
+    z-index: 5;
+}
+.excavator-sticky.excavator-bgbar .place-search input {
+    width: 270px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.excavator-sort{
+    float: left;
+    line-height: 40px;
+    margin-left: 10px;
+}
+.excavator-sort-item{
+    position: relative;
+    padding: 0 7px;
+    float: left;
+}
+.excavator-sort .focus,.excavator-sort-dropdown>a:hover{
+    color: #0089dc;
+}
+.excavator-sort-dropdown{
+    display: none;
+    position: absolute;
+    width: 97px;
+    background-color: #FFFFFF;
+    line-height: 30px;
+    top: 0;
+    left: -3px;
+    padding: 40px 3px 4px 14px;
+    border: 1px solid #f5f5f5;
+    border-width: 0 1px 1px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    z-index: 6;
+}
+.excavator-sort-dropdown.wide{
+    width: 135px;
+}
+.excavator-sort-item:hover>a:first-child{
+    position: relative;
+    z-index: 999;
+}
+.excavator-sort-dropdown>a{
+    display: block;
+}
+.excavator-sort-item:hover .excavator-sort-dropdown {
+    display: block;
+}
+.excavator-sort-item:hover .angle-down {
+    display: none;
+}
+.excavator-sort-item .angle-up{
+    display: none;
+}
+.excavator-sort-item:hover .angle-up {
+    display: inline-block;
+}
+.excavator-option{
+    float: right;
+    margin: 3px 10px 3px 0;
+    line-height: 34px;
+    padding: 0 10px;
+    border-left: 1px solid #E6E6E6;
+}
+.excavator-option-item{
+    cursor: pointer;
+}
+.excavator-option-item input{
+    margin-right: 3px;
+    vertical-align: middle;
+}
+/*element+element	div+p	选择紧接在 <div> 元素之后的所有 <p> 元素。指的是紧接着的兄弟元素*/
+.excavator-option-item+ .excavator-option-item{
+    margin-left: 10px;
+}
+.place-tips{
+    line-height: 40px;
+    margin-top: 10px;
+    padding: 0 10px;
+    border:1px solid #ffe4b9;
+    background-color: #fffdee;
+}
+.place-tips span>span{
+    color: #f63;
+    font-size: 20px;
+    font-weight: 400;
+}
+.place-tips a{
+    color: #0089dc;
+}
+.place-rstbox{
+    position: relative;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-bottom: 0;
+}
+.rstblock:hover{
+    background-color: #f5f5f5;
+}
+
+.rstblock{
+    width: 25%;
+}
+.rstblock{
+    position: relative;
+    background: #FFFFFF;
+    border-bottom: 1px solid #f5f5f5;
+    height: 140px;
+}
+.rstblock,.rstblock-logo{
+    float: left;
+    font-size: 12px;
+    position: relative;
+}
+.rstblock-logo{
+    padding: 20px;
+    color: #999;
+    text-align: center;
+}
+.rstblock-logo-icon{
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+.rstblock-content{
+    padding: 20px;
+}
+.rstblock-title{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333333;
+}
+.star{
+    position: relative;
+    color: #cccccc;
+    font-size: 1em;
+    display: inline-block;
+
+}
+.star span{
+    position: absolute;
+    color: #ffc30c;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+}
+.rstblock-monthsales{
+    margin-left: 10px;
+    color: #999999;
+}
+.rstblock-cost{
+    margin-top: 3px;
+    color: #999999;
+}
+
+.rstblock-schedule{
+    margin-top: 8px;
+    display: inline-block;/*可让框和元素宽度一致*/
+    padding: 0 6px;
+    border-radius: 3px;
+    line-height: 20px;
+}
+.rstblock-schedule{
+    color: #14ae18;
+    background-color: #FFFFFF;
+    border: 1px solid #14ae18;
+    line-height: 18px;/*后面的会覆盖掉前面的*/
+}
+.rstblock-activity{
+    margin-top: 9px;
+}
+.rstblock-activity i{
+    display: inline-block;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    vertical-align: middle;
+    color: #FFFFFF;
+    overflow: hidden;
+    width: 18px;
+    border-radius: 2px;
+    white-space: nowrap;
+    /*margin-right: 3px;*/
+    padding: 1px;
+    background-color: #f63;
+    text-align: center;
+}
+/*详情hover部分*/
+.rstblock-hidden .caret-left{
+    position: absolute;
+    top:20px;
+    left:-7px;
+    font-size: 20px;
+    color: #FFFFFF;
+    z-index: 11;/*为了覆盖住隐藏框的边框*/
+}
+.rstblock-hidden{
+    position: absolute;
+    width: 294px;
+    top: 0;
+    left: 292px;
+    border: 2px solid #eeeeee;
+    background-color: #FFFFFF;
+    z-index: 10;/*如果不设置这个属性，会被起送价格的z-index覆盖*/
+    display: none;
+}
+
+.rstblock-hidden .content{
+    padding: 15px 13px;
+}
+.rstblock-hidden .content h3{
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 1px solid #eeeeee;
+}
+.rstblock-hidden .content .pay{
+    margin-left: 5px;
+    color: #999999;
+}
+.rstblock-hidden .contentpay{
+    margin: 10px 0;
+}
+.rstblock-hidden .inform{
+    color: #999999;
+    background-color: #f5f5f5;
+    padding: 10px 5px;
+}
+.rstblock-hidden .inform span{
+    border-left: 1px solid #cccccc;
+    margin:0 5px;
+    padding: 0 5px;
+    text-align: center;
+}
+.rstblock-hidden .inform span:first-child{
+    border-left: none;
+}
+.rstblock-hidden .bulletin{
+    margin: 20px 0 10px;
+    color: #999999;
+    line-height: 20px;
+}
+
+
+.rstblock:hover .rstblock-hidden{
+    display: block;
+}
+
+.elemeicon-premiumsign{
+    background-position: 4px -487px;
+}
+.rstblock-logo-premiumsign {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 40px;
+    z-index: 1;
+}
+
+/*侧边框提醒信息*/
+.remind{
+    display: none;
+}
+.toolbar-btn:hover .remind{
+    display: block;
+}
+.remind-text{
+    position: absolute;
+    top: 5px;
+    width: 80px;
+    line-height: 28px;
+    background-color: #807D84;
+    color: #FFFFFF;
+    left: -84px;
+    font-size: 14px;
+    border-radius: 2px;
+    letter-spacing: 2px;/*字间距*/
+}
+.toolbar-btn .icon{
+    position: absolute;
+    left: -5px;
+    top: 10px;
+    color: #807D84;
+}
