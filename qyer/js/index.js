@@ -31,7 +31,7 @@ $(function(){
                totalseconds = totalseconds;
            }else{
                totalseconds = 0;
-               clearInterval(time);
+               
            }
 
            var hours = parseInt(totalseconds/3600);//得到小时数
