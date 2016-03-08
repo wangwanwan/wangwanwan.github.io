@@ -18,10 +18,20 @@
         $(".double-right").click(function(){
             $(".sidebar").animate({right:'-295'},"500");
         });
-        //点击内容部分收起
-        $(".content").click(function(){
-            $(".sidebar").animate({right:'-295'},"500");
-        });
+        //点击除了购物车的其他部分，收起购物车
+        $(document).click(function(event){
+			if($(".sidebar").css("right")=="0px"){
+				$(".sidebar").animate({right:'-295'},"500");
+			}	
+			
+		});
+		//如果点击的是购物车部分，则阻止事件冒泡
+		$(".sidebar").click(function(event){
+			if($(".sidebar").css("right")=="0px"){
+				event.stopPropagation();
+			}	
+			
+		});
 
 
         //动态获取滚动条的高度，然后判断
