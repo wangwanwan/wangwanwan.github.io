@@ -22,7 +22,7 @@ $(function(){
         gettime();
 
        function gettime(){
-           var newtime = new Date(2016,2,4,13,24,00);//月份是从0开始的，1就是代表2月份
+           var newtime = new Date(2016,2,15,13,24,00);//月份是从0开始的，1就是代表2月份
            var nowtime = new Date();
            var updatetime = newtime.getTime()-nowtime.getTime();//毫秒数
            var totalseconds = Math.round(updatetime/1000);//转化成秒，round()把数四舍五入为最接近的整数;
